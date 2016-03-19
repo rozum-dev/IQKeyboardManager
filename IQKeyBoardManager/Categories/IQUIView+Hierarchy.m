@@ -142,7 +142,7 @@ Class UISearchBarTextFieldClass;        //UISearchBar
 -(BOOL)_IQcanBecomeFirstResponder
 {
     [self _setIsAskingCanBecomeFirstResponder:YES];
-    BOOL _IQcanBecomeFirstResponder = ([self canBecomeFirstResponder] && [self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField]  && ![self isSearchBarTextField]);
+    BOOL _IQcanBecomeFirstResponder = ([self canBecomeFirstResponder] && [self isUserInteractionEnabled] && ![self isHidden] && [self alpha]!=0.0 && ![self isAlertViewTextField]);
     
     if (_IQcanBecomeFirstResponder == YES)
     {
